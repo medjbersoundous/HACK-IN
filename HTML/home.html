@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== TITLE ===============-->
+    <title>BOT_RECURE</title>
+
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="src1/Sans titre - 2 [Récupéré].png" type="image/x-icon">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="/CSS/home.css">
+
+
+    <!--<link href="https://fonts.googleapis.com/css2?family=Readex+Pro&display=swap" rel="stylesheet"> for font-->
+</head>
+
+<body>
+    <section class="navbar">
+        <div class="nav_img">
+            <img src="/Assets/Rectangle 20.png">
+        </div>
+
+        <ul class="list">
+            <li class="one1">ABOUT</li>
+            <li class="one2">SignUP</li>
+            <li class="one3">Log In</li>
+        </ul>
+        <div class="humberger_bar">
+            <button onclick="showElement()"><img src="src1/burger-bar.png"></button>
+        </div>
+    </section>
+    <div class=" container list_respo">
+        <ul class="content list_respo">
+            <li class="one1_respo">ABOUT</li>
+            <li class="one2_respo">SignUP</li>
+            <li class="one3_respo">Log In</li>
+        </ul>
+    </div>
+
+    <div class="lets_start">
+        <a>Let’s get started</a>
+    </div>
+
+
+
+
+</body>
+<script>
+    function showElement() {
+        console.log("efe");
+        var element = document.getElementsByClassName('list_respo')[0];
+        if (element.style.display != 'none') {
+            element.style.display = 'none';
+            console.log("dakhel 1ere");
+        } else {
+            element.style.display = 'block';
+            console.log("dakhel 2ere");
+
+        };
+        console.log("fin");
+    }
+</script>
+
+
+</html>
