@@ -1,0 +1,128 @@
+                         * {
+                         box-sizing: border-box;
+                         font-family: 'Montserrat';
+                         font-style: normal;
+                     }
+                     
+                     body {
+                         background-image: url('src1/About\ us.png');
+                         background-attachment: fixed;
+                         background-repeat: no-repeat;
+                         background-size: 100% 100%;
+                     }
+                     
+                     .navbar {
+                         display: flex;
+                         justify-content: space-between;
+                         align-items: center;
+                         height: 90px;
+                         width: 100%;
+                         background-color: #FCF4F2;
+                         border-radius: 20px;
+                     }
+                     
+                     .nav_img img {
+                         width: 164px;
+                         height: 90px;
+                     }
+                     
+                     .list {
+                         list-style: none;
+                     }
+                     
+                     .list_respo {
+                         flex-wrap: wrap;
+                         display: none;
+                     }
+                     
+                     .one1 {
+                         display: inline-block;
+                         padding: 10px;
+                         color: #01243A;
+                         font-weight: 700;
+                         font-size: 22px;
+                         border: 3px solid #FCF4F2;
+                         border-radius: 12px;
+                     }
+                     
+                     .one2 {
+                         display: inline-block;
+                         padding: 10px;
+                         color: #01243A;
+                         font-weight: 700;
+                         font-size: 22px;
+                         border: 3px solid #FC981C;
+                         border-radius: 12px;
+                     }
+                     
+                     .one3 {
+                         display: inline-block;
+                         padding: 10px 10px;
+                         color: #01243A;
+                         font-weight: 700;
+                         font-size: 22px;
+                         border: 3px solid #FC981C;
+                         border-radius: 12px;
+                         margin-right: 20px;
+                     }
+                     
+                     .humberger_bar {
+                         display: none;
+                     }
+                     
+                     .humberger_bar img {
+                         height: 70px;
+                         width: 70px;
+                         margin-right: 5px;
+                     }
+                     
+                     .humberger_bar button {
+                         text-decoration-style: none;
+                     }
+                     
+                     .content {
+                         animation: slide-in 3s ease-out;
+                         animation-fill-mode: forwards;
+                         transform: translateX(-100%);
+                     }
+                     
+                     .container {
+                         overflow: hidden;
+                     }
+                     
+                     .one1_respo,
+                     .one2_respo,
+                     .one3_respo {
+                         text-align: center;
+                         padding: 40px;
+                         color: rgb(233, 234, 235);
+                         background-color: rgb(40, 74, 74);
+                     }
+                     
+                     .lets_start a {
+                         position: relative;
+                         color: #FCF4F2;
+                         left: 50px;
+                         top: 700px;
+                     }
+                     
+                     @media (max-width:600px) {
+                         .list {
+                             display: none;
+                         }
+                         .humberger_bar {
+                             display: block;
+                         }
+                     }
+                     
+                     @keyframes slide-in {
+                         from {
+                             transform: translateX(-100%);
+                         }
+                         to {
+                             transform: translateX(0%);
+                         }
+                         .list_respo {
+                             flex-wrap: wrap;
+                             display: block;
+                         }
